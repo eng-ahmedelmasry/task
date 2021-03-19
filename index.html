@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-dark">
+
+<button id="showModel" class="btn btn-primary m-5 btn-block w-50 mx-auto " > add name </button>
+
+    <div id="model" class="model" tabindex="-1">
+        <div class="model-dialog">
+            <div class="model-content">
+                <div class="model-header">
+                    <h5 class="model-title">Add Task</h5>
+                    <button type="button" onclick="showModell()" class="close" data-dismiss="model" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="model-body">
+                    <div class="form-group col-12 m-5 mx-auto">
+                        <input type="text" id="task" placeholder="Add Task" class="form-control">
+                        <button class="my-4 btn btn-primary btn-block" id="addTask"> Add Task </button>
+                    </div>
+                </div>
+                <div class="model-footer">
+                    <button type="button" id="close" class="btn btn-secondary" data-dismiss="model">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  
+
+    <div id="noTask" class="alert alert-danger m-auto col-4">
+     no data added
+    </div>
+
+    <div id="allTasks"></div>
+
+    <script src="./main.js"> </script>
+</body>
+
+</html>
